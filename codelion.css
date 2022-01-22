@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800&display=swap');
+
+*{
+    font-family:'Montserrat';
+}
+
+body, h1, p{
+    margin:0px;
+    padding:0px;
+}
+
+h1 {
+    font-size:36px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+h2{
+    text-align: left;
+    font-size: 20px;
+    font-weight: lighter;
+    color:#282828;
+    border-bottom: 1px solid #ebebeb;
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+}
+
+.about-me-text{
+    font-size: 15px;
+    text-align: left;
+    line-height: 28px;
+}
+
+section{
+    margin-top:20px;
+    margin-bottom: 40px;
+    
+}
+
+.title-box{
+    text-align:right;
+}
+
+.mainbox{
+    border:5px double #ebebeb;
+    border-radius: 5px;
+    padding: 30px;
+    width: 1500px;
+    margin: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 1px 20px 0 rgba(0,0,0,0.1);
+}
+
+.name-text{
+    font-size: 16px;
+    color: #7c7c7c;
+    font-weight: bold;
+}
+
+.title-text{
+    font-size:13px;
+    font-weight:bold;
+    color:#282828;
+    float:left;
+}
+
+.year-text{
+    font-size:13px;
+    font-weight:bold;
+    color:#282828;
+    float: right;
+}
+
+.float-wrap{
+    overflow:hidden;    /*float로 정렬한 애들이 다른 애들이랑 겹치지 않도록*/
+}
+
+.desc-text{
+    text-align:left;
+    font-size:13px;
+    padding:10px;
+    margin-top:10px;
+}
+
+.desc-subtext{
+    text-align:left;
+    font-size:13px;
+    color:#282828;
+    padding-left:16px;
+}
+
+.sns-wrap{
+    text-align: right;
+}
+
+.sns-img{
+    width:25px;
+    height:25px;
+}
+footer{
+    text-align: center; /*텍스트 중앙 정렬*/
+    color : #919191;
+    background-color: #1e1e1e;
+    font-size: 12px;
+    padding: 20px;
+}
