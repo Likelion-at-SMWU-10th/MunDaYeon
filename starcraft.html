@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "starcraft.css">
+    <title>스타크래프트</title>
+</head>
+<body>
+    <h1 id='hp'>HP : 3</h1>
+    <div class="background">
+        <img id="attacker" src="images/attacker.png" alt="drone">
+        <img id="defender" src="images/defender.png" alt="bunker">
+        <img id="spit" src="images/spit.png" alt="spit">
+    </div>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <script>
+        var hp = 3;
+        // 클릭이벤트
+        $('#attacker').click(function(){
+            $('#spit').fadeIn();
+            $('#spit').animate({left: '+=1600'});
+            $('#spit').fadeOut(function(){  
+                hp = hp - 1;
+                $('#hp').text('HP :' +hp);
+                if(hp == 0){
+                    $('#defender').fadeOut();
+                }  
+            });
+            $('#spit').css({"left": "150px"});
+            
+        });
+    </script>
+  
+    
+</body>
+</html>
