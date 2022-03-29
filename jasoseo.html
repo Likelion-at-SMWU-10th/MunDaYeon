@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "jasoseo.css">    
+    <title>자바스크립트를 이용한 자기소개서 글자수 세기</title>
+</head>
+<body class = "container">
+    <h1>"자기소개서"</h1>
+
+    <p class = "question">1. 본인에 대한 소개를 간단하게 적어주세요 (200자 이내)</p>
+    <textarea onkeydown="counter()" class = "first_form" rows = "8" cols = "100" id ="jasoseo" placeholder="본인소개를 해주세요!"></textarea>
+    <br>
+    <span id ="count">(0/200)</span>
+   
+
+    <p class = "question">2. 본인의 장점과 단점을 적어주세요 (200자 이내)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+    <textarea onkeydown="counter()" class = "first_form" rows = "8" cols = "100" id ="jasoseo" placeholder="본인의 장단점을 적어주세요!"></textarea>
+    <br>
+    <span id ="count">(0/200)</span>
+    <script>
+
+        function counter(){
+            var content = document.getElementById('jasoseo').value;
+            if(content.length > 200 ){
+                content = content.substring(0,200);
+                document.getElementById('jasoseo').value = content;
+            }
+            document.getElementById('count').innerHTML = '('+content.length+'/'+'200)'
+        };
+    </script>
+</body>
+</html>
